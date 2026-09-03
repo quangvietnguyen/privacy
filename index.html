@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Deepy</title>
+  <meta name="description" content="Privacy Policy for Deepy - Time-blocking and Mind Sweep for High Impact Deep Work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-gradient-start: #090d16;
+      --bg-gradient-end: #0f172a;
+      --card-bg: rgba(30, 41, 59, 0.55);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --accent-primary: #f59e0b;
+      --accent-glow: rgba(245, 158, 11, 0.15);
+      --accent-blue: #38bdf8;
+      --accent-green: #10b981;
+      --divider: rgba(255, 255, 255, 0.07);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: radial-gradient(circle at 50% 0%, #1e293b 0%, var(--bg-gradient-start) 45%, var(--bg-gradient-end) 100%);
+      background-attachment: fixed;
+      color: var(--text-primary);
+      line-height: 1.75;
+      padding: 0;
+      margin: 0;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* Header & Branding */
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+      position: relative;
+    }
+
+    .logo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      padding: 8px 18px;
+      border-radius: 9999px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px var(--accent-glow);
+    }
+
+    .logo-icon {
+      font-size: 18px;
+    }
+
+    .logo-text {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent-primary);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 38px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      color: #ffffff;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    .last-updated {
+      font-size: 14px;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    /* Content Card */
+    .content-wrapper {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 44px;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 640px) {
+      .content-wrapper {
+        padding: 26px 20px;
+        border-radius: 18px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+    }
+
+    /* Key Highlights / Pill Callouts */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .highlight-card {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 16px 18px;
+    }
+
+    .highlight-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .highlight-desc {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* Typography inside content */
+    section {
+      margin-bottom: 38px;
+    }
+
+    section:last-of-type {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 14px;
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .section-num {
+      color: var(--accent-primary);
+      font-size: 16px;
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 14px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+      color: var(--text-secondary);
+      font-size: 14.5px;
+    }
+
+    li::before {
+      content: "•";
+      position: absolute;
+      left: 8px;
+      color: var(--accent-primary);
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 1;
+      top: 2px;
+    }
+
+    strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--accent-blue);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #7dd3fc;
+      text-decoration: underline;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--divider);
+      margin: 32px 0;
+    }
+
+    .contact-box {
+      background: rgba(245, 158, 11, 0.06);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      border-radius: 14px;
+      padding: 20px;
+      margin-top: 16px;
+    }
+
+    .contact-box p {
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .contact-email {
+      color: var(--accent-primary);
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo-badge">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Deepy App</span>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="last-updated">Last Updated: September 4, 2026</p>
+    </header>
+
+    <div class="content-wrapper">
+      <!-- Quick Highlights -->
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-title">🔒 Privacy-First Architecture</div>
+          <div class="highlight-desc">Your schedules and mind sweep notes belong entirely to you with offline-first local storage.</div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-title">🚫 Zero Ad Tracking</div>
+          <div class="highlight-desc">We never sell, monetize, rent, or broker your personal data to third-party advertisers.</div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-title">📱 Local Notifications</div>
+          <div class="highlight-desc">Time block reminders run entirely on your device without server-side tracking.</div>
+        </div>
+      </div>
+
+      <section>
+        <h2><span class="section-num">1.</span> Introduction</h2>
+        <p>
+          Welcome to <strong>Deepy</strong> ("we", "our", or "us"). Deepy is a productivity application designed to help you organize your daily time blocks, capture distractions via Mind Sweep, and achieve deep, focused work.
+        </p>
+        <p>
+          We are deeply committed to protecting your privacy. This Privacy Policy explains what information we collect, how it is used, where it is stored, and your rights regarding your data when you use the Deepy mobile application (the "App").
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2><span class="section-num">2.</span> Information We Collect</h2>
+        <p>We only collect the minimal information necessary to deliver core productivity and cross-device sync features:</p>
+        <ul>
+          <li>
+            <strong>Account Information:</strong> When you optionally create an account or sign in using Apple Sign-In or Google Sign-In, we receive basic profile identifiers (such as your user ID, display name, and email address).
+          </li>
+          <li>
+            <strong>Productivity & Task Data:</strong> The time blocks, mind sweep items, completion statuses, category tags (Deep vs. Shallow), custom duration goals, and deadlines you create within the App.
+          </li>
+          <li>
+            <strong>Device & Technical Diagnostics:</strong> Standard technical information such as operating system version and anonymous crash reports to diagnose performance issues and ensure app stability.
+          </li>
+        </ul>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2><span class="section-num">3.</span> How We Use Your Information</h2>
+        <p>We use your information exclusively for the following purposes:</p>
+        <ul>
+          <li>To schedule and display your daily focus sessions and mind sweep inbox.</li>
+          <li>To calculate your focus metrics (such as daily deep work hours, streak consistency, and category ratios).</li>
+          <li>To synchronize your tasks and schedule across your devices when you are logged in.</li>
+          <li>To schedule <strong>local reminders</strong> on your device when a time block is starting or concluding.</li>
+          <li>To authenticate and maintain the security of your account.</li>
+        </ul>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2><span class="section-num">4.</span> Storage and Security</h2>
+        <p>
+          <strong>Offline-First Local Storage:</strong> All your tasks, settings, and schedules are stored locally on your device using SQLite and secure device storage. The app remains fully functional even without an internet connection.
+        </p>
+        <p>
+          <strong>Cloud Synchronization (Firebase):</strong> When you sign in, your data is securely synchronized with Firebase Cloud Firestore (hosted on Google Cloud Platform). All data in transit is encrypted using industry-standard Transport Layer Security (TLS/HTTPS), and all data at rest is encrypted using AES-256 encryption.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2><span class="section-num">5.</span> Third-Party Services</h2>
+        <p>We partner only with reputable infrastructure providers essential for app operation:</p>
+        <ul>
+          <li><strong>Apple Sign-In:</strong> For private and secure authentication on iOS devices.</li>
+          <li><strong>Google Sign-In:</strong> For secure Google authentication.</li>
+          <li><strong>Google Firebase / Cloud Firestore:</strong> For user authentication and cloud data persistence.</li>
+        </ul>
+        <p>We do not integrate any third-party advertising networks, data brokers, or marketing trackers.</p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2><span class="section-num">6.</span> Notifications</h2>
+        <p>
+          Deepy requests permission to send notifications solely to alert you when your scheduled focus sessions begin or end. These are <strong>local notifications</strong> generated and scheduled directly by your device's operating system without sending payload data to external servers.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2><span class="section-num">7.</span> Data Retention & Account Deletion</h2>
+        <p>
+          You retain complete ownership and control over your data:
+        </p>
+        <ul>
+          <li><strong>In-App Task Deletion:</strong> You can edit or delete individual mind sweep items and schedule blocks at any time.</li>
+          <li><strong>Account Deletion:</strong> You can request full account and data deletion at any time directly through the app settings or by contacting us at the email below. Upon request, all associated cloud records are permanently purged.</li>
+          <li><strong>Local Data Removal:</strong> Uninstalling the App removes all locally cached SQLite databases and secure store records from your device.</li>
+        </ul>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2><span class="section-num">8.</span> Children's Privacy</h2>
+        <p>
+          Deepy is not directed toward children under the age of 13. We do not knowingly collect or solicit personal information from children under 13. If we discover that a child under 13 has provided us with personal information, we will delete it promptly.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2><span class="section-num">9.</span> Changes to This Privacy Policy</h2>
+        <p>
+          We may update our Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this Privacy Policy periodically for any updates.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2><span class="section-num">10.</span> Contact Us</h2>
+        <p>
+          If you have any questions, suggestions, or requests regarding this Privacy Policy or your data, please contact us:
+        </p>
+        <div class="contact-box">
+          <p><strong>Deepy Support</strong></p>
+          <p>Email: <a href="mailto:viet.ngquang92@gmail.com" class="contact-email">viet.ngquang92@gmail.com</a></p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Deepy. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
