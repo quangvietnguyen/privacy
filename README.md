@@ -1,50 +1,39 @@
-# Deepy – Privacy Policy Page
+# Applications Privacy Policies
 
-This repository contains the official, standalone **Privacy Policy** webpage for **Deepy** (`com.nqv.dwast`).
+Official privacy policies directory for our mobile and web applications.
 
-## Quick Preview
-Open `index.html` in any web browser:
-```bash
-# macOS
-open index.html
+## Directory Structure
 
-# Linux
-xdg-open index.html
 ```
+privacy/
+├── index.html          # Hub directory page listing all applications
+├── deepy/
+│   └── index.html      # Deepy Privacy Policy (/deepy)
+└── README.md
+```
+
+---
+
+## App Store & Google Play URLs
+
+* **Deepy Privacy Policy URL:** `https://<your-domain>/deepy` (or `https://<your-username>.github.io/privacy/deepy/`)
+
+---
+
+## Adding Future Apps
+To add another app in the future:
+1. Create a new folder (e.g., `app-name/`).
+2. Add its `index.html`.
+3. Add a link card into the root `index.html`.
 
 ---
 
 ## Deployment Options
 
-### Option 1: GitHub Pages (Recommended - Free)
-1. Push this folder to a GitHub repository (e.g. `github.com/your-username/deepy-privacy`).
-2. Go to **Settings** → **Pages**.
-3. Under **Build and deployment** → **Source**, select **Deploy from a branch**.
-4. Set branch to `main` / `root` (`/`) and click **Save**.
-5. Your Privacy Policy URL will be: `https://your-username.github.io/deepy-privacy/`
+### GitHub Pages
+1. Push this repository to GitHub.
+2. Go to **Settings** → **Pages** → Source: **Deploy from a branch** (`main` / root).
+3. Deepy URL: `https://<your-username>.github.io/<repo-name>/deepy/`
 
----
-
-### Option 2: Vercel (Instant)
-```bash
-npx vercel deploy --prod
-```
-
----
-
-### Option 3: Netlify Drop / CLI
-```bash
-npx netlify deploy --prod --dir=.
-```
-
----
-
-### Option 4: Cloudflare Pages
-1. Connect this repo to Cloudflare Pages.
-2. Set Build Output directory to `/`.
-3. Deploy!
-
----
-
-## App Store Connect Submission
-Use the deployed live URL as your **Privacy Policy URL** in App Store Connect under **App Information** → **Privacy Policy URL**.
+### Vercel / Cloudflare Pages / Netlify
+Deploy the root folder. Both `/` and `/deepy` will automatically be routed.

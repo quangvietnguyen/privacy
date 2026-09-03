@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy &mdash; Deepy</title>
-  <meta name="description" content="Privacy Policy for Deepy. Learn how we handle your data with complete transparency." />
+  <title>Privacy Policies &mdash; Applications</title>
+  <meta name="description" content="Official Privacy Policies directory for our mobile and web applications." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -12,39 +12,12 @@
     :root {
       --bg: #ffffff;
       --bg-surface: #f8fafc;
-      --bg-surface-elevated: #f1f5f9;
       --border: #e2e8f0;
-      --border-subtle: #edf2f7;
       --text-heading: #0f172a;
       --text-body: #334155;
       --text-muted: #64748b;
-      --text-faint: #94a3b8;
-      --accent: #0f172a;
-      --accent-pill-bg: #f1f5f9;
-      --accent-pill-border: #e2e8f0;
-      --link: #2563eb;
-      --link-hover: #1d4ed8;
-      --table-stripe: #f8fafc;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #09090b;
-        --bg-surface: #121215;
-        --bg-surface-elevated: #18181b;
-        --border: #27272a;
-        --border-subtle: #1f1f23;
-        --text-heading: #f4f4f5;
-        --text-body: #d4d4d8;
-        --text-muted: #a1a1aa;
-        --text-faint: #71717a;
-        --accent: #f4f4f5;
-        --accent-pill-bg: #18181b;
-        --accent-pill-border: #27272a;
-        --link: #38bdf8;
-        --link-hover: #7dd3fc;
-        --table-stripe: #121215;
-      }
+      --link: #0f172a;
+      --link-hover: #2563eb;
     }
 
     * {
@@ -54,439 +27,159 @@
     }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Inter", "Helvetica Neue", Arial, sans-serif;
       background-color: var(--bg);
       color: var(--text-body);
       line-height: 1.7;
       font-size: 15px;
-      font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
 
     .wrapper {
-      max-width: 720px;
+      max-width: 680px;
       margin: 0 auto;
-      padding: 72px 24px 120px;
+      padding: 72px 24px 100px;
     }
 
-    /* Top Navigation / Brand */
-    .top-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 56px;
-      padding-bottom: 24px;
-      border-bottom: 1px solid var(--border-subtle);
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: var(--text-heading);
-    }
-
-    .brand-mark {
-      width: 24px;
-      height: 24px;
-      border-radius: 6px;
-      background: var(--accent);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--bg);
-      font-weight: 700;
-      font-size: 13px;
-    }
-
-    .brand-title {
-      font-weight: 600;
-      font-size: 15px;
-      letter-spacing: -0.2px;
-    }
-
-    .status-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12px;
-      font-weight: 500;
-      color: var(--text-muted);
-      background: var(--accent-pill-bg);
-      border: 1px solid var(--accent-pill-border);
-      padding: 4px 10px;
-      border-radius: 9999px;
-    }
-
-    .status-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: #10b981;
-    }
-
-    /* Document Header */
-    .doc-header {
+    header {
       margin-bottom: 48px;
     }
 
     h1 {
-      font-size: 32px;
+      font-size: 28px;
       font-weight: 700;
-      letter-spacing: -0.8px;
+      letter-spacing: -0.6px;
       color: var(--text-heading);
-      margin-bottom: 12px;
-      line-height: 1.25;
-    }
-
-    .meta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      font-size: 13px;
-      color: var(--text-muted);
-    }
-
-    /* Executive Summary Box */
-    .summary-card {
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 24px;
-      margin-bottom: 48px;
-    }
-
-    .summary-card-title {
-      font-size: 13px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
-      color: var(--text-muted);
-      margin-bottom: 12px;
-    }
-
-    .summary-card ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: grid;
-      gap: 8px;
-    }
-
-    .summary-card li {
-      position: relative;
-      padding-left: 20px;
-      font-size: 14px;
-      color: var(--text-body);
-      line-height: 1.55;
-    }
-
-    .summary-card li::before {
-      content: "—";
-      position: absolute;
-      left: 0;
-      color: var(--text-faint);
-    }
-
-    /* Sections */
-    section {
-      margin-bottom: 44px;
-    }
-
-    h2 {
-      font-size: 18px;
-      font-weight: 600;
-      letter-spacing: -0.3px;
-      color: var(--text-heading);
-      margin-top: 0;
-      margin-bottom: 14px;
-    }
-
-    h3 {
-      font-size: 15px;
-      font-weight: 600;
-      color: var(--text-heading);
-      margin-top: 20px;
       margin-bottom: 8px;
     }
 
-    p {
-      margin-bottom: 14px;
-      color: var(--text-body);
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 15px;
     }
 
-    p:last-child {
-      margin-bottom: 0;
-    }
-
-    ul, ol {
-      padding-left: 20px;
-      margin-bottom: 14px;
-    }
-
-    li {
-      margin-bottom: 6px;
-      color: var(--text-body);
-    }
-
-    strong {
-      color: var(--text-heading);
-      font-weight: 600;
-    }
-
-    a {
-      color: var(--link);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.15s ease;
-    }
-
-    a:hover {
-      border-bottom-color: var(--link);
-    }
-
-    /* Comparison Table / Key Data */
-    .data-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-      font-size: 13.5px;
-    }
-
-    .data-table th,
-    .data-table td {
-      padding: 12px 14px;
-      text-align: left;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .data-table th {
-      font-weight: 600;
-      color: var(--text-heading);
-      background: var(--bg-surface);
-      font-size: 12.5px;
-      text-transform: uppercase;
-      letter-spacing: 0.4px;
-    }
-
-    .data-table td {
-      color: var(--text-body);
-    }
-
-    .data-table tr:last-child td {
-      border-bottom: none;
-    }
-
-    /* Contact Callout */
-    .contact-block {
-      border-top: 1px solid var(--border);
-      padding-top: 32px;
-      margin-top: 48px;
-    }
-
-    .contact-details {
-      display: inline-flex;
+    .apps-list {
+      display: flex;
       flex-direction: column;
-      gap: 4px;
-      margin-top: 8px;
-      font-size: 14px;
+      gap: 14px;
+      margin-bottom: 48px;
     }
 
-    /* Footer */
-    footer {
-      border-top: 1px solid var(--border-subtle);
-      margin-top: 64px;
-      padding-top: 24px;
+    .app-card {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 13px;
-      color: var(--text-muted);
-      flex-wrap: wrap;
-      gap: 12px;
+      padding: 18px 20px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.15s ease;
     }
 
-    @media (max-width: 600px) {
-      .wrapper {
-        padding: 40px 20px 80px;
-      }
-      h1 {
-        font-size: 26px;
-      }
-      .data-table th,
-      .data-table td {
-        padding: 10px 8px;
-        font-size: 13px;
-      }
+    .app-card:hover {
+      border-color: #cbd5e1;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+      transform: translateY(-1px);
+    }
+
+    .app-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .app-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: #0f172a;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    .app-name {
+      font-weight: 600;
+      font-size: 15.5px;
+      color: var(--text-heading);
+      letter-spacing: -0.2px;
+      margin-bottom: 2px;
+    }
+
+    .app-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .view-link {
+      font-size: 13.5px;
+      font-weight: 500;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .app-card:hover .view-link {
+      color: var(--link-hover);
+    }
+
+    .contact-footer {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+
+    .contact-footer a {
+      color: var(--text-heading);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      margin-top: 48px;
+      font-size: 12.5px;
+      color: var(--text-muted);
     }
   </style>
 </head>
 <body>
   <main class="wrapper">
-    <!-- Top Navigation -->
-    <div class="top-bar">
-      <a href="#" class="brand" aria-label="Deepy Home">
-        <div class="brand-mark">D</div>
-        <span class="brand-title">Deepy</span>
-      </a>
-      <div class="status-badge">
-        <span class="status-dot"></span>
-        <span>Active &amp; Compliant</span>
-      </div>
-    </div>
-
-    <!-- Header -->
-    <header class="doc-header">
-      <h1>Privacy Policy</h1>
-      <div class="meta-row">
-        <span>Effective Date: September 4, 2026</span>
-        <span>&bull;</span>
-        <span>Version 1.0</span>
-        <span>&bull;</span>
-        <span>Applicable to: Deepy for iOS &amp; Android</span>
-      </div>
+    <header>
+      <h1>Privacy Policies</h1>
+      <p class="subtitle">Select an application below to view its specific Privacy Policy and data handling practices.</p>
     </header>
 
-    <!-- Executive Summary -->
-    <div class="summary-card">
-      <div class="summary-card-title">Summary of Key Principles</div>
-      <ul>
-        <li><strong>Offline-First Storage:</strong> Your time blocks, focus sessions, and mind sweeps are stored locally on your device by default.</li>
-        <li><strong>No Third-Party Advertising:</strong> We do not serve ads, track your behavior across other apps, or sell your personal data.</li>
-        <li><strong>Local Notifications:</strong> Scheduled reminders execute strictly on-device without remote tracking payloads.</li>
-        <li><strong>Complete User Control:</strong> You can export, modify, or permanently delete your account and associated cloud data at any time.</li>
-      </ul>
+    <div class="apps-list">
+      <!-- Deepy App -->
+      <a href="./deepy/" class="app-card" aria-label="Deepy Privacy Policy">
+        <div class="app-left">
+          <div class="app-icon">D</div>
+          <div>
+            <div class="app-name">Deepy</div>
+            <div class="app-desc">Time-blocking &amp; Mind Sweep for High Impact Deep Work</div>
+          </div>
+        </div>
+        <div class="view-link">
+          <span>View Policy</span> &rarr;
+        </div>
+      </a>
     </div>
 
-    <!-- 1. Introduction -->
-    <section>
-      <h2>1. Overview</h2>
-      <p>
-        Deepy (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) provides focus scheduling and time-blocking tools designed to facilitate deep work. This Privacy Policy details the types of information we collect, how it is processed, and your rights concerning your personal data when using the Deepy mobile application (the &ldquo;App&rdquo;).
-      </p>
-    </section>
+    <div class="contact-footer">
+      <p>For general privacy inquiries across any of our applications, please contact <a href="mailto:vietneu.92@gmail.com">vietneu.92@gmail.com</a>.</p>
+    </div>
 
-    <!-- 2. Information Collected -->
-    <section>
-      <h2>2. Information We Collect</h2>
-      <p>We adhere to strict data minimization principles. We only collect information essential to providing core application functionality:</p>
-      
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Category</th>
-            <th>Data Types</th>
-            <th>Purpose</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Account</strong></td>
-            <td>User ID, Email address, Name (via Apple or Google Sign-In)</td>
-            <td>User authentication &amp; cloud account recovery</td>
-          </tr>
-          <tr>
-            <td><strong>User Content</strong></td>
-            <td>Time blocks, Mind Sweep entries, Categories, Deadlines, Completion status</td>
-            <td>Core scheduling, analytics computation, and optional multi-device synchronization</td>
-          </tr>
-          <tr>
-            <td><strong>Diagnostics</strong></td>
-            <td>Anonymous crash logs, OS version, device model</td>
-            <td>Performance monitoring and troubleshooting</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- 3. How We Use Data -->
-    <section>
-      <h2>3. Purpose of Processing</h2>
-      <p>We process collected data exclusively for the following operational needs:</p>
-      <ul>
-        <li>Rendering your daily schedule timeline and Mind Sweep inbox.</li>
-        <li>Aggregating focus duration and weekly consistency streak metrics.</li>
-        <li>Synchronizing user data across authenticated devices via Firebase Cloud Firestore.</li>
-        <li>Delivering on-device time block start and completion alerts.</li>
-        <li>Authenticating accounts and preventing unauthorized access.</li>
-      </ul>
-    </section>
-
-    <!-- 4. Storage & Security -->
-    <section>
-      <h2>4. Data Storage and Security</h2>
-      <p>
-        <strong>Local Persistence:</strong> All tasks and local settings are persisted on-device using SQLite and platform-level secure storage (Keychain / EncryptedSharedPreferences).
-      </p>
-      <p>
-        <strong>Cloud Infrastructure:</strong> When user accounts are linked, data synchronization is handled through Google Cloud / Firebase Firestore. All network communications use TLS 1.3 encryption in transit, and stored database assets are encrypted at rest using AES-256.
-      </p>
-    </section>
-
-    <!-- 5. Third-Party Services -->
-    <section>
-      <h2>5. Third-Party Integrations</h2>
-      <p>The App integrates solely with infrastructure partners necessary for authentication and persistence:</p>
-      <ul>
-        <li><strong>Apple Sign-In (Apple Inc.):</strong> Authentication on iOS devices. Subject to <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple&rsquo;s Privacy Policy</a>.</li>
-        <li><strong>Google Sign-In &amp; Firebase (Google LLC):</strong> Authentication and cloud database services. Subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google&rsquo;s Privacy Policy</a>.</li>
-      </ul>
-      <p>We do not integrate third-party ad networks, tracking SDKs, or data broker frameworks.</p>
-    </section>
-
-    <!-- 6. Notifications -->
-    <section>
-      <h2>6. Notifications</h2>
-      <p>
-        Notification permissions are requested to alert you when scheduled time blocks begin or end. Deepy uses <strong>local system notifications</strong> generated directly by the operating system. No notification contents or device tokens are transmitted to external push notification servers.
-      </p>
-    </section>
-
-    <!-- 7. Data Retention & Deletion -->
-    <section>
-      <h2>7. Data Retention and Account Deletion</h2>
-      <p>
-        You hold full ownership over your information:
-      </p>
-      <ul>
-        <li><strong>In-App Deletion:</strong> You can delete any individual time block or mind sweep item at any time.</li>
-        <li><strong>Account Deletion:</strong> You can request immediate and permanent deletion of your account and cloud records directly inside the app or by emailing our support address. All cloud records will be purged within 30 days of request.</li>
-        <li><strong>App Uninstallation:</strong> Deleting the app removes all local databases and cached credentials from your device.</li>
-      </ul>
-    </section>
-
-    <!-- 8. Children's Privacy -->
-    <section>
-      <h2>8. Children&rsquo;s Privacy</h2>
-      <p>
-        Deepy does not knowingly collect or solicit personal information from children under the age of 13. If we become aware that personal information from a child under 13 has been collected, we will take immediate steps to delete that data.
-      </p>
-    </section>
-
-    <!-- 9. Changes to Policy -->
-    <section>
-      <h2>9. Policy Updates</h2>
-      <p>
-        We may update this Privacy Policy periodically to reflect enhancements in our service or regulatory updates. Any revisions will be published on this page with an updated effective date.
-      </p>
-    </section>
-
-    <!-- 10. Contact -->
-    <section class="contact-block">
-      <h2>10. Contact Information</h2>
-      <p>For questions, privacy inquiries, or data deletion requests, please reach out to:</p>
-      <div class="contact-details">
-        <span><strong>Deepy Team</strong></span>
-        <span>Email: <a href="mailto:viet.ngquang92@gmail.com">viet.ngquang92@gmail.com</a></span>
-      </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
-      <span>&copy; 2026 Deepy. All rights reserved.</span>
-      <span>App Store &bull; Google Play</span>
+      <span>&copy; 2026 All rights reserved.</span>
     </footer>
   </main>
 </body>
