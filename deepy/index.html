@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy &mdash; Deepy</title>
-  <meta name="description" content="Privacy Policy for Deepy. Learn how we handle your data with complete transparency." />
+  <meta name="description" content="Privacy Policy for Deepy. Learn how we handle your focus, schedule, analytics, and authentication data with complete transparency." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -45,7 +45,7 @@
     }
 
     .wrapper {
-      max-width: 700px;
+      max-width: 720px;
       margin: 0 auto;
       padding: 64px 24px 100px;
     }
@@ -69,22 +69,22 @@
     }
 
     .brand-mark {
-      width: 26px;
-      height: 26px;
-      border-radius: 6px;
+      width: 28px;
+      height: 28px;
+      border-radius: 7px;
       background: var(--text-heading);
       display: flex;
       align-items: center;
       justify-content: center;
       color: #ffffff;
       font-weight: 700;
-      font-size: 13px;
+      font-size: 14px;
       letter-spacing: -0.5px;
     }
 
     .brand-title {
       font-weight: 600;
-      font-size: 16px;
+      font-size: 17px;
       letter-spacing: -0.3px;
       color: var(--text-heading);
     }
@@ -136,7 +136,7 @@
     .summary-card {
       background: var(--bg-surface);
       border: 1px solid var(--border);
-      border-radius: 10px;
+      border-radius: 12px;
       padding: 22px 24px;
       margin-bottom: 44px;
     }
@@ -179,7 +179,7 @@
     }
 
     h2 {
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 600;
       letter-spacing: -0.3px;
       color: var(--text-heading);
@@ -241,9 +241,10 @@
 
     .data-table th,
     .data-table td {
-      padding: 11px 14px;
+      padding: 12px 14px;
       text-align: left;
       border-bottom: 1px solid var(--table-border);
+      vertical-align: top;
     }
 
     .data-table th {
@@ -261,6 +262,16 @@
 
     .data-table tr:last-child td {
       border-bottom: none;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: #e2e8f0;
+      color: #334155;
     }
 
     /* Contact Details */
@@ -327,7 +338,7 @@
       <div class="meta-row">
         <span>Effective Date: September 4, 2026</span>
         <span>&bull;</span>
-        <span>Version 1.0</span>
+        <span>Version 1.1</span>
         <span>&bull;</span>
         <span>iOS &amp; Android</span>
       </div>
@@ -337,10 +348,10 @@
     <div class="summary-card">
       <div class="summary-card-title">Key Principles</div>
       <ul>
-        <li><strong>Offline-First Architecture:</strong> All your daily time blocks and mind sweep notes reside locally on your device.</li>
-        <li><strong>Zero Advertising or Tracking:</strong> We do not track you across apps or websites, and we never sell your personal data.</li>
-        <li><strong>Local System Notifications:</strong> Focus session alerts are scheduled locally on-device without remote push tokens.</li>
-        <li><strong>User Ownership:</strong> You have the right to edit, export, or permanently delete your data at any time.</li>
+        <li><strong>Offline-First &amp; Guest Mode:</strong> You can use Deepy completely offline without creating an account or sending data over the network.</li>
+        <li><strong>No Third-Party Ad Tracking:</strong> We never sell your personal information, display third-party advertisements, or track you across external apps and websites.</li>
+        <li><strong>Local System Notifications:</strong> Focus session and schedule reminders are generated directly on your device without transmitting device tokens to remote push servers.</li>
+        <li><strong>First-Party Analytics &amp; Control:</strong> Aggregated product analytics help improve focus tools, and you have full control to opt out or delete your account at any time.</li>
       </ul>
     </div>
 
@@ -348,96 +359,104 @@
     <section>
       <h2>1. Overview</h2>
       <p>
-        Deepy (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) is a productivity application designed for time-blocking and focused deep work. This Privacy Policy details the types of information we process, the purposes for which it is collected, and your rights regarding your personal information when using the Deepy mobile application (the &ldquo;App&rdquo;).
+        Deepy (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) is a deep work ritual and time-blocking productivity application. This Privacy Policy details the types of information we process, why we collect it, how it is secured, and your privacy rights under applicable data protection laws (including GDPR and CCPA) when using the Deepy mobile application (the &ldquo;App&rdquo;).
       </p>
     </section>
 
     <!-- 2. Information We Collect -->
     <section>
       <h2>2. Information We Collect</h2>
-      <p>We adhere to strict data minimization. We only collect information essential to providing core application functionality:</p>
+      <p>We practice strict data minimization. Depending on how you use Deepy (Guest / Offline Mode vs. Authenticated Sync), we may collect and process the following categories of data:</p>
       
       <table class="data-table">
         <thead>
           <tr>
             <th>Category</th>
-            <th>Data Types</th>
+            <th>Data Collected</th>
             <th>Purpose</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><strong>Account</strong></td>
-            <td>User ID, Email address, Name (via Apple or Google Sign-In)</td>
-            <td>Authentication &amp; account recovery</td>
+            <td><strong>Account Information</strong></td>
+            <td>User ID, Email address, Name (when using Apple Sign-In, Google Sign-In, or Email authentication)</td>
+            <td>Account management, security verification, and multi-device data synchronization. (Optional: Guest mode requires no account).</td>
           </tr>
           <tr>
-            <td><strong>User Content</strong></td>
-            <td>Time blocks, Mind Sweep items, Categories, Durations, Completion status</td>
-            <td>Core scheduling, analytics computation, and optional cloud sync</td>
+            <td><strong>User Content &amp; Focus Data</strong></td>
+            <td>Scheduled time blocks, Mind Sweep thoughts, task categories (Deep vs. Shallow), session durations, completion timestamps, and shutdown ritual status</td>
+            <td>Providing core time-blocking functionality, focus ratio metrics, and streak tracking. Synced securely to your private cloud storage when signed in.</td>
           </tr>
           <tr>
-            <td><strong>Diagnostics</strong></td>
-            <td>Anonymous crash telemetry, OS version, device model</td>
-            <td>Performance monitoring and bug resolution</td>
+            <td><strong>Usage &amp; Interaction Analytics</strong></td>
+            <td>App screen views, feature interactions (e.g. time block created/completed, shutdown ritual finished), app language preference, theme mode (light/dark), and in-app sentiment feedback (thumbs up / down ratings)</td>
+            <td>Understanding feature utility and improving user experience via Google Analytics 4 (GA4) / Firebase Analytics. Data is aggregated and never used for advertising.</td>
+          </tr>
+          <tr>
+            <td><strong>Technical Diagnostics</strong></td>
+            <td>Device model, operating system version, app version, randomized client identifier, and crash logs</td>
+            <td>Diagnosing software errors, optimizing performance across devices, and ensuring system stability.</td>
           </tr>
         </tbody>
       </table>
     </section>
 
-    <!-- 3. Purpose of Processing -->
+    <!-- 3. How We Use Your Information -->
     <section>
-      <h2>3. Purpose of Processing</h2>
-      <p>We process collected information exclusively for the following purposes:</p>
+      <h2>3. How We Use Your Information</h2>
+      <p>We use collected data solely for the following legitimate business and operational purposes:</p>
       <ul>
-        <li>Rendering your daily schedule timeline and Mind Sweep inbox.</li>
-        <li>Computing focus duration and weekly consistency streak statistics.</li>
-        <li>Synchronizing your tasks across authenticated devices via Firebase Cloud Firestore.</li>
-        <li>Delivering on-device focus session start and completion alerts.</li>
-        <li>Authenticating your account securely.</li>
+        <li><strong>Core Scheduling &amp; Focus Workflow:</strong> Displaying your day's schedule blocks, managing your Mind Sweep inbox, and computing daily deep work hours.</li>
+        <li><strong>Data Synchronization:</strong> Syncing your focus timeline and tasks across your authorized devices via Google Cloud Firestore when signed in.</li>
+        <li><strong>Local Timing &amp; Reminders:</strong> Scheduling on-device notifications to alert you when your deep focus sessions begin or conclude.</li>
+        <li><strong>Product Optimization:</strong> Measuring aggregated app metrics to identify usability bottlenecks and enhance feature ergonomics.</li>
+        <li><strong>Account Security:</strong> Verifying authenticated logins and protecting against unauthorized access.</li>
       </ul>
     </section>
 
-    <!-- 4. Storage & Security -->
+    <!-- 4. Data Storage, Retention & Security -->
     <section>
       <h2>4. Data Storage and Security</h2>
       <p>
-        <strong>On-Device Storage:</strong> All tasks and local configurations are stored directly on your device using SQLite and platform-native secure storage (iOS Keychain and Android EncryptedSharedPreferences).
+        <strong>Local Storage:</strong> When running in Offline / Guest mode or while disconnected, your tasks and preferences are stored locally on your device using encrypted native storage mechanisms (iOS Keychain / Android EncryptedSharedPreferences and SQLite).
       </p>
       <p>
-        <strong>Cloud Infrastructure:</strong> For authenticated users who enable multi-device sync, data is processed through Google Cloud / Firebase Firestore. All network communications use TLS 1.3 encryption in transit, and database records are encrypted at rest using AES-256.
+        <strong>Cloud Storage &amp; Encryption:</strong> For authenticated users, cloud backup is powered by Google Firebase / Google Cloud Platform. Data is encrypted in transit using industry-standard TLS 1.3 encryption and encrypted at rest using AES-256.
+      </p>
+      <p>
+        <strong>Analytics Data:</strong> Analytics identifiers and event streams are processed in compliance with Google's data privacy standards and are subject to automated retention limits.
       </p>
     </section>
 
-    <!-- 5. Third-Party Integrations -->
+    <!-- 5. Third-Party Service Providers -->
     <section>
-      <h2>5. Third-Party Integrations</h2>
-      <p>The App integrates exclusively with essential infrastructure providers:</p>
+      <h2>5. Third-Party Service Providers</h2>
+      <p>Deepy only shares data with infrastructure providers strictly necessary to operate the application:</p>
       <ul>
-        <li><strong>Apple Sign-In (Apple Inc.):</strong> Authentication on iOS devices. Subject to <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple&rsquo;s Privacy Policy</a>.</li>
-        <li><strong>Google Sign-In &amp; Firebase (Google LLC):</strong> Authentication and cloud database services. Subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google&rsquo;s Privacy Policy</a>.</li>
+        <li><strong>Apple Sign-In (Apple Inc.):</strong> Handles biometric and single sign-on authentication on iOS devices. Subject to <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple&rsquo;s Privacy Policy</a>.</li>
+        <li><strong>Google Firebase &amp; Cloud (Google LLC):</strong> Provides user authentication, cloud database persistence, and diagnostic telemetry. Subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google&rsquo;s Privacy Policy</a>.</li>
+        <li><strong>Google Analytics 4 (Google LLC):</strong> Aggregated, first-party app interaction measurement. Analytics data is never combined with third-party advertising profiles.</li>
       </ul>
-      <p>We do not integrate any advertising SDKs, data broker networks, or third-party behavioral trackers.</p>
+      <p><strong>We do not partner with data brokers, advertising networks, or external marketing platforms.</strong></p>
     </section>
 
     <!-- 6. Notifications -->
     <section>
       <h2>6. Notifications</h2>
       <p>
-        Notification permissions are requested solely to alert you when scheduled focus sessions begin or finish. Deepy uses <strong>local system notifications</strong> generated directly by the operating system. No notification contents or device tokens are transmitted to external push servers.
+        Deepy requests notification permissions only upon visiting the Schedule screen. All alerts are <strong>local operating system notifications</strong> generated directly by your device hardware. Deepy does not transmit device push tokens to third-party marketing servers. You can toggle or revoke notification permissions at any time in your device Settings.
       </p>
     </section>
 
-    <!-- 7. Data Retention & Account Deletion -->
+    <!-- 7. Your Choices & Data Deletion Rights -->
     <section>
-      <h2>7. Data Retention and Account Deletion</h2>
-      <p>
-        You hold complete control over your data:
-      </p>
+      <h2>7. Your Privacy Rights and Data Deletion</h2>
+      <p>You have full ownership of your data under global privacy frameworks:</p>
       <ul>
-        <li><strong>In-App Item Deletion:</strong> You can delete any individual time block or mind sweep item at any time.</li>
-        <li><strong>Account Deletion:</strong> You can request permanent deletion of your account and cloud records directly within the App or by contacting our support email. Cloud records will be permanently purged within 30 days of request.</li>
-        <li><strong>App Removal:</strong> Deleting the App removes all local databases and cached credentials from your device.</li>
+        <li><strong>Delete Tasks &amp; Sweeps:</strong> You can delete any individual time block or mind sweep item directly inside the App at any time.</li>
+        <li><strong>Account Deletion:</strong> You can permanently delete your account and all associated cloud database records by contacting us. Upon request, all cloud data is permanently purged within 30 days.</li>
+        <li><strong>Local Reset:</strong> Uninstalling the App immediately removes all on-device databases and stored authentication tokens.</li>
+        <li><strong>Analytics Opt-Out:</strong> Users may opt out of non-essential usage telemetry by contacting support or adjusting device settings.</li>
       </ul>
     </section>
 
@@ -445,24 +464,24 @@
     <section>
       <h2>8. Children&rsquo;s Privacy</h2>
       <p>
-        Deepy does not knowingly collect or solicit personal information from children under the age of 13. If we discover that personal information from a child under 13 has been collected, we will take immediate steps to delete that data.
+        Deepy is intended for general audiences and does not knowingly collect personal information from children under 13 years of age. If we learn that personal data of a child under 13 has been collected without verifiable parental consent, we will promptly delete that information.
       </p>
     </section>
 
-    <!-- 9. Policy Updates -->
+    <!-- 9. Changes to This Privacy Policy -->
     <section>
-      <h2>9. Policy Updates</h2>
+      <h2>9. Changes to This Privacy Policy</h2>
       <p>
-        We may update this Privacy Policy periodically to reflect enhancements in our service or regulatory requirements. Any revisions will be published on this page with an updated effective date.
+        We may update this policy periodically to reflect feature additions or legal compliance updates. Changes take effect upon posting to this URL, and significant modifications will be highlighted in the App's release notes.
       </p>
     </section>
 
     <!-- 10. Contact Information -->
     <section class="contact-block">
       <h2>10. Contact Information</h2>
-      <p>For questions, privacy inquiries, or data deletion requests, please contact:</p>
+      <p>For privacy inquiries, data access, or account deletion requests, please contact:</p>
       <div class="contact-details">
-        <span><strong>Deepy Support</strong></span>
+        <span><strong>Deepy Privacy &amp; Data Protection</strong></span>
         <span>Email: <a href="mailto:vietneu.92@gmail.com">vietneu.92@gmail.com</a></span>
       </div>
     </section>
